@@ -1,0 +1,205 @@
+/* Global Styles */
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  font-family: 'Poppins', sans-serif;
+  color: #f0f6fc;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(240, 246, 252, 0.07);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #58a6ff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #8b949e;
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: #c9d1d9;
+  margin-top: 30px;
+  text-shadow: 0 0 5px rgba(88, 166, 255, 0.7);
+}
+
+/* Input Field */
+#screen {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  border-radius: 10px;
+  background: #21262d;
+  color: #f0f6fc;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+#screen:focus {
+  background: #161b22;
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+input::placeholder {
+  color: #8b949e;
+}
+
+/* Dropdown Menus */
+.currencySelect {
+  width: 48%;
+  padding: 12px;
+  margin: 10px 1%;
+  border: 1px solid rgba(88, 166, 255, 0.2);
+  border-radius: 8px;
+  background: #21262d;
+  color: #c9d1d9;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.currencySelect:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+}
+
+/* Button */
+#convertBtn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #238636, #2ea043);
+  color: #f0f6fc;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(34, 139, 34, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#convertBtn:hover {
+  background: linear-gradient(135deg, #2ea043, #238636);
+  box-shadow: 0 8px 20px rgba(34, 139, 34, 0.5);
+  transform: translateY(-3px);
+}
+
+#convertBtn:active {
+  transform: translateY(0);
+  background: linear-gradient(135deg, #1c7a30, #238636);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #screen {
+    font-size: 1rem;
+  }
+
+  .currencySelect {
+    font-size: 0.95rem;
+  }
+
+  #convertBtn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #screen {
+    font-size: 0.9rem;
+  }
+
+  .currencySelect {
+    font-size: 0.9rem;
+  }
+
+  #convertBtn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #screen {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .currencySelect {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  #convertBtn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
