@@ -22,6 +22,14 @@ A simple web-based currency converter that uses an API to fetch real-time exchan
 3. Upon clicking the "Convert" button, the app fetches the latest exchange rate from an API.
 4. The converted amount is displayed instantly.
 
+
+## Screenshots
+
+## **Main Interface**
+![Main Interface](currencyconverter)
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](MIT-LICENSE) file for details.
