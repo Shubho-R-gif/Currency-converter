@@ -26,7 +26,7 @@ A simple web-based currency converter that uses an API to fetch real-time exchan
 ## Screenshots
 
 ## **Main Interface**
-![Main Interface](currencyconverter)
+![Main Interface](Currencyconverter.jpeg)
 
 ---
 
