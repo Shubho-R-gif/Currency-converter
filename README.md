@@ -14,9 +14,16 @@ A simple web-based currency converter that uses an API to fetch real-time exchan
 - **CSS**: For styling the webpage.
 - **JavaScript**: For functionality and API integration.
 
+### Built With:
+<p align="center"> <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML Logo" width="60" height="60"/> <img src="https://img.icons8.com/color/96/css3.png" alt="CSS Logo" width="60" height="60"/> <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript Logo" width="60" height="60"/> </p>
+
 ## How It Works
 
 1. The user selects a base currency and a target currency.
 2. The user inputs an amount in the base currency.
 3. Upon clicking the "Convert" button, the app fetches the latest exchange rate from an API.
 4. The converted amount is displayed instantly.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](MIT-LICENSE) file for details.
